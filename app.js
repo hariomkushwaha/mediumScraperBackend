@@ -78,7 +78,7 @@ app.post('/API/scrape',async function(req,res){
     const Link = [];
     // const Likes = [];
     // const Comments = [];
-    const qu = req.body.data.qu;
+    const qu = req.body.qu;
     // quH = qu;
 
     console.log(qu);
@@ -308,7 +308,7 @@ app.post('/API/scrape',async function(req,res){
                     let timesM = await MostSearched.find({text:qu})
                     
                     let countM = timesM[0].value;
-                    // console.log(timesM + qu)
+                    console.log(timesM + qu)
                     await MostSearched.updateOne({ text: qu }, {
                       value: countM + 1
                     });
