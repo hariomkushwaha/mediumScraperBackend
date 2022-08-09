@@ -1,50 +1,57 @@
 const mongoose = require('mongoose')
 
-const scrapDataSchema = new mongoose.Schema({
-    search:{
+// quality: quality,
+// durability: durability,
+// usability: usability,
+// ge: ge,
+// se: se,
+// pmexp: pmexp,
+// dbmexp: dbmexp,
+// coexp: coexp,
+// cost: cost,
+// duration: duration,
+
+const proposalDataSchema = new mongoose.Schema({
+    quality:{
         type: String,
         required: false
     },
-    title:{
+    durability:{
         type: String,
         required: false
     },
-    author:{
+    usability:{
         type:String,
         required:false
     },
-    dates:{
+    ge:{
         type:String,
         required:false
     },
-    readTime:{
+    se:{
         type:String,
         required:false
     },
-    image:{
+    pmexp:{
         type:String,
         required:false
       },
-    blogImage:{
+      dbmexp:{
         type:String,
         required:false
       },
-    text:{
+      coexp:{
         type:String,
         required:false
       },
-    link:{
+      cost:{
         type:String,
         required:false
     },
-    like:{
+    duration:{
         type:String,
         required:false
-    },  
-    comment:{
-        type:String,
-        required:false
-    }
+      }
 })
 
-module.exports = mongoose.model('ScrapData', scrapDataSchema)
+module.exports = mongoose.model('ProposalData', proposalDataSchema)
