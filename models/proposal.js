@@ -12,6 +12,7 @@ const mongoose = require('mongoose')
 // duration: duration,
 
 const proposalDataSchema = new mongoose.Schema({
+  
     quality:{
         type: String,
         required: false

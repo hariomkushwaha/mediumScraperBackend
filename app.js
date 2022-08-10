@@ -69,16 +69,7 @@ app.get('/API/proposal' ,async function(req,res){
     // let quH = "";
 app.post('/API/proposal',async function(req,res){
    
-      // const quality = req.body.quality;
-      // const durability=   req.body.durability;
-      // const usability=    req.body.usability;
-      // const ge=           req.body.ge;
-      // const se=           req.body.se;
-      // const pmexp=        req.body.pmexp;
-      // const dbmexp=       req.body.dbmexp;
-      // const coexp=        req.body.coexp;
-      // const cost=         req.body.cost;
-      // const duration =    req.body.duration;
+
 
             
                 const PropsalDatas = new ProposalData({
